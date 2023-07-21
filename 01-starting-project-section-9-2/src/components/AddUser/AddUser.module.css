@@ -1,0 +1,18 @@
+.input-group {
+    display: block;
+    flex-direction: row;
+    width: 100%;
+    margin: 0.50rem 0;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.70rem;
+    font-weight: bold;
+}
+
+.form-container input {
+    width: 100%;
+    display: block;
+}

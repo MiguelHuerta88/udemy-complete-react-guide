@@ -1,0 +1,39 @@
+[debug] [2023-07-16T20:26:09.915Z] ----------------------------------------------------------------------
+[debug] [2023-07-16T20:26:09.916Z] Command:       /opt/homebrew/Cellar/node/20.3.0/bin/node /opt/homebrew/bin/firebase init
+[debug] [2023-07-16T20:26:09.916Z] CLI Version:   12.4.4
+[debug] [2023-07-16T20:26:09.916Z] Platform:      darwin
+[debug] [2023-07-16T20:26:09.917Z] Node Version:  v20.3.0
+[debug] [2023-07-16T20:26:09.917Z] Time:          Sun Jul 16 2023 13:26:09 GMT-0700 (Pacific Daylight Time)
+[debug] [2023-07-16T20:26:09.917Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-16T20:26:09.920Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-16T20:26:09.920Z] > authorizing via signed-in user (guelme88@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/miguelhuerta/Desktop/code/react-complete-guide-udemy/01-starting-project-section-23-1-deployment-lazy-loading
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-07-16T20:27:14.954Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-07-16T20:27:14.954Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"react-deplyment-demo","name":"react-deployment-demo"}
+[debug] [2023-07-16T20:27:15.357Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2023-07-16T20:27:15.357Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2023-07-16T20:27:15.432Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (/opt/homebrew/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:289:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID react-deplyment-demo. Please try again with a unique project ID.
